@@ -1,0 +1,20 @@
+.footer-link-logo {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    @media screen and(max-width:1199px) {
+        font-size: 24px;
+        line-height: 1.375;
+    }
+    @media screen and(min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.19;   
+    }
+    color: $footer-link-color;
+    text-decoration: none;
+    &:hover,
+    &:active {
+        text-decoration: none;
+    }
+}
