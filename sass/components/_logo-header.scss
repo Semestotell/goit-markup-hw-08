@@ -2,17 +2,18 @@
     color: $logo-color;
 }
 .link-logo{
-    font-family: 'Relewaay';
+    font-family: 'Raleway';
     font-size: 26px;
     line-height: 1.19;
-    font-weight: 400;
+    font-weight: 700;
     color: $logo-link-color;
     text-decoration: none;
     &:hover,
     &:active{
         text-decoration: none;
     }
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:768px) {
         display: block;
+        padding: 16px 0 16px 15px;
     }
 }
