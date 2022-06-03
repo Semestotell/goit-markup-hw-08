@@ -479,7 +479,6 @@ body {
 }
 
 .studio {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -551,8 +550,17 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 510px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    width: 798px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -878,6 +886,12 @@ body {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
+
 .footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -975,7 +989,8 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .join {
-    margin-left: auto;
+    text-align: center;
+    margin-left: 165px;
   }
 }
 
@@ -1004,7 +1019,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .foot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1016,6 +1031,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 76px;
   }
 }
 
@@ -1069,6 +1085,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .mailing {
+    text-align: center;
     margin-left: 166px;
     margin-top: 60px;
   }
@@ -1178,6 +1195,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   padding: 0;
   border: 0;
   background-color: #2196f3;
@@ -1480,10 +1498,11 @@ body {
 
 .menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -20px;
   width: 100%;
+  height: 100%;
   background-color: #fff;
   padding: 20px;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1537,6 +1556,7 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0;
+  margin-left: 40px;
 }
 
 .menu-nav__link {
@@ -1575,6 +1595,7 @@ body {
   margin: 0;
   list-style-type: none;
   margin-top: 302px;
+  margin-left: 40px;
 }
 
 .menu-auth__item {
@@ -1582,7 +1603,7 @@ body {
 }
 
 .menu-auth__link {
-  color: #212121;
+  color: #757575;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 500;
@@ -1609,18 +1630,19 @@ body {
   padding-left: 0;
   padding-top: 32px;
   padding-bottom: 48px;
+  margin-left: 40px;
 }
 
 .menu-soc__item {
+  padding-right: 10px;
+}
+
+.menu-soc__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .menu-soc__item:not(:first-child) {
   margin-left: 10px;
-}
-
-.menu-soc__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .menu-soc__link {

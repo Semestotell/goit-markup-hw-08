@@ -1,6 +1,12 @@
 .team{
     background-color: $team-backgound;
-    @media screen and(max-width:1199px) {
+    @media screen and(min-width:480px) and(max-width:767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 510px;
+    }
+    @media screen and(min-width:768px) and(max-width:1199px) {
+        width: 798px;
         padding-top: 60px;
         padding-bottom: 60px;
     }
