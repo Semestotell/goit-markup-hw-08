@@ -5,6 +5,9 @@
     @media screen and(max-width:767px) {
         text-align: center;
     }
+    @media screen and(min-width:481px) and (max-width:798px) {
+        width: 798px;
+    }
 }
 .footer .container{
     display: flex;
