@@ -64,6 +64,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-nav {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+}
+
 .main-nav-list {
   position: relative;
   display: -webkit-box;
