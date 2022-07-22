@@ -95,40 +95,40 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <form class="form">
+          <form class="form js-form" autocomplete="off">
               <p class="form__title">Оставьте свои данные, мы вам перезвоним</p>
               <div class="form__field">
                 <label for="name" class="form__label">Имя</label>
-                <input type="text" name="name" class="form__input" id="name">
+                <input type="text" name="name" class="form__input js-input" id="name">
                 <svg width="18" height="18" class="form__img">
                   <use href="./images/icons.svg#icon-man"></use>
                 </svg>
               </div>
               <div class="form__field">
                 <label for="tel" class="form__label">Телефон</label>
-                <input type="tel" name="phone-number" class="form__input" id="tel">
+                <input type="tel" name="phone-number" class="form__input js-input" id="tel">
                 <svg width="18" height="18" class="form__img">
                   <use href="./images/icons.svg#icon-tel"></use>
                 </svg>
               </div>
               <div class="form__field">
                 <label for="email" class="form__label">Почта</label>
-                <input type="email" name="email" class="form__input" id="email">
+                <input type="email" name="email" class="form__input js-input" id="email">
                 <svg width="18" height="18" class="form__img">
                   <use href="./images/icons.svg#icon-e-mail"></use>
                 </svg>
               </div>
               <div class="comment__field">
                 <label for="comm" class="comment__label">Коментарий</label>
-                  <textarea name="comment" id="comm" placeholder="Введите текст" class="comment__input"></textarea>
+                  <textarea name="comment" id="comm" placeholder="Введите текст" class="comment__input js-input"></textarea>
               </div>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="treaty" class="checkbox-label__input">
+                  <input type="checkbox" name="treaty" class="checkbox-label__input js-ch">
                   <span class="checkbox-label__icon"></span>
                   <span class="checkbox-label__title">Соглашаюсь с рассылкой и принимаю </span>
                   <a href="#" class="checkbox-label__link">Условия договора</a>
                 </label>
-              <button type="submit" class="form-button">Отправить</button>
+              <button type="submit" class="form-button js-btn">Отправить</button>
           </form>
             <button type="button" class="modal-close" data-modal-close>
               <svg class="close-icon" width="18" height="18">
@@ -526,5 +526,6 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/check.js" type="module"></script>
   </body>
 </html>
